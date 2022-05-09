@@ -1,0 +1,25 @@
+
+create scope retailsample.eventing;
+create scope retailsample.staging;
+create scope retailsample.inventory;
+create collection retailsample.eventing.events;
+create collection retailsample.staging.products_on_hand;
+create collection retailsample.staging.products;
+create collection retailsample.staging.orders;
+create collection retailsample.staging.geom;
+create collection retailsample.staging.addresses;
+create collection retailsample.staging.customers;   
+create collection retailsample.inventory.products_on_hand;
+create collection retailsample.inventory.products;
+create collection retailsample.inventory.orders;
+create collection retailsample.inventory.geom;
+create collection retailsample.inventory.addresses;
+create collection retailsample.inventory.customers;
+
+
+create primary index on retailsample.inventory.products_on_hand;
+create primary index on retailsample.inventory.customers;
+create primary index on retailsample.inventory.addresses;
+create primary index on retailsample.inventory.geom;
+create primary index on retailsample.inventory.orders;
+create primary index on retailsample.inventory.products;

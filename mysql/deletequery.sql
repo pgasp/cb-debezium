@@ -1,0 +1,1 @@
+delete from `inventory`.`customers` where id>1005;

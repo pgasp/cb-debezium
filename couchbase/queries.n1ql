@@ -1,0 +1,6 @@
+SELECT customers.first_name,
+       customers.last_name,
+       customers.email ,
+       addresses 
+FROM customers NEST addresses ON addresses.customer_id=customers.id
+WHERE customers.id=1003
